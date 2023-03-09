@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  src="index.js"></script>
+    <link rel="stylesheet" type = "text/css" href="index.css" >
+</head>
+<body>
+    <table class="info">
+         
+        <tr>
+    
+            <td>
+                <label class="ls">Search by Last Name</label> <br><br><br><br><br>
+                <label class="name"> First Name</label> <br><br><br><br><br><br>
+                <label>Last Name</label><br><br><br><br><br><br>
+                <label>Address</label><br><br><br><br><br><br>
+                <label>State/Province</label><br><br><br><br><br><br>
+                <label>Email Address</label><br><br><br><br><br><br>
+                <label>Phone Number</label><br><br><br><br><br><br>
+            </td>
+    
+            <td>
+                <input type="text"  id="searchlast" class="last" placeholder="Input Last Name" /><br><br><br><br><br>
+                <input type="text"  id="fname" class="content" readonly/><br><br><br><br><br><br>
+                <input type="text"  id="lname" class="content" readonly/><br><br><br><br><br><br>
+                <input type="text"  id="address" class="content"   readonly/><br><br><br><br><br><br>
+                <input type="text"  id="postalcode" class="content" readonly/><br><br><br><br><br><br>
+                <input type="email" id="email" class="content" readonly/><br><br><br><br><br><br>
+                <input type="tel"   id="telnumber" class="content" readonly/><br><br><br><br><br><br>
+            </td>
+        </tr>
+    </table>
+    
+   <!-- DIV to show the search result -->
+    <select class="displayDiv" id="displayDiv" size="7" onchange='displayName(this.value)' >
+
+    </select>
+
+            <div class="compact">
+            <input type="radio" name="vehicle" value="15" id="compact" class="comButton" >Compact - $15/day<br>
+            </div>
+
+            <div class="mid">
+            <input type="radio" name="vehicle" value=20.00 id="mid" class="midButton">Mid-Size - $20/day<br>
+            </div>
+
+
+            <div class="luxuryDiv">
+            <input type="radio" name="vehicle" value=35.00  id="luxury" class="luxButton">Luxury - $35/day<br>
+            </div>
+
+
+
+           <div class="truckDiv">
+            <input type="radio" name="vehicle"  value="40.00" id="truck" class="truckButton">Van/Truck - $40/day<br>
+           </div>
+ 
+        
+   
+
+    
+    
+          <div class="input-group">
+             <input type="checkbox" name= rack value="5.00" id="rack" >
+             <label for="rack" ><span class="icon"></span><span class="text">Roof Rack or Bike Rack - Extra $5/day</span></label>
+          </div>
+
+
+          <div class="gpsCheck">
+                <input type="checkbox" name=gps  value="10.00" id="gps">
+                <label for="gps" ><span class="icon"></span><span class="text">GPS - Extra $10</span></label>
+
+
+          </div>
+             <div class="childCheck">
+                <input type="checkbox" name= childseat  value=4.00 id="childseat">
+                <label for="childseat" ><span class="icon"></span><span class="text">Child Seat - Free</span></label>
+             </div>
+
+
+    <img src="../img/compact.png" class="compactimg" alt="img">
+    <img src="../img/mid_size.png" class="midsize" alt="img" >
+    <img src="../img/luxury.png" class="luxuryimg"  alt="img" >
+    <img src="../img/truck.png" class="truckimg"  alt="img" >
+    
+   <img src="../img/rack.png" class="rackimg" alt="img" >
+   <img src="../img/gps.png" class="gpsimg" alt="img" >
+   <img src="../img/childseat.png"  class="childseatimg" alt="img">
+    
+       <div class="days">
+    <label>How long would you like to rent for?</label>  <input type="number" min="1" max="30" id="rentLength" class="dayButton">Days
+    </div>
+    <br><br><br>
+    
+    <button onclick="Price()" class="button"> Price your rent</button>
+   
+    <div id="display" class="display">
+
+    </div>
+
+
+</body>
+</html>

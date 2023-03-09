@@ -1,0 +1,177 @@
+
+body{
+    
+background-color: rgb(252, 241, 227);
+background-image: url(../img/bg10.png);
+font-family: 'Anek Telugu', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+
+.image
+{
+    display: flex;
+    position: absolute;
+    top: 1%;
+    left: 27%;
+    width: 50.6%;
+    height: 40%;
+    align-items: center; 
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 47%;
+    left: 35%;
+    font-size: xx-large;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+   
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+
+
+.btn-hover {
+        background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+.showQuiz
+{
+  
+    margin-top: 35%;
+    margin-left: 28%;
+    border: 2px solid rgb(31, 215, 202);
+    border-radius: 12px;
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    background-color: #f0f0f0;
+    }
+
+.h1
+{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    width: 50.6%;
+    height: 40%;
+    align-items: center; 
+    font-size:36px;
+    font-style: italic;
+    color:rgb(201, 107, 75);
+
+}
+
+.p1
+{
+    display: flex;
+    position: absolute;
+    top: 38%;
+    left: 32%;
+    width: 50.6%;
+    height: 40%;
+    align-items: center; 
+    font-size:30px;
+    color:darkturquoise;
+}
+.ques
+{
+    font-size: xx-large;
+    color:red;
+}
+
+
+
+.displayButton {
+    border-radius: 4px;
+    background-color: rgba(137, 171, 227, 1.00);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 270px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-left: 45%;
+  }
+  
+  .displayButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .displayButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s;
+  }
+  
+  .displayButton:hover span {
+    padding-right: 25px;
+  }
+  
+  .displayButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .dis{
+    background-color: #f5b1ca;
+    margin: 5px;
+    top: 220%;
+    margin-left: 50%;
+    height: 65px;
+    width: 25%;
+    font-size: 50px;
+    align-items: center; 
+    justify-content: center;
+    display: flex;
+    position: absolute;
+  }
